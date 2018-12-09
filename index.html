@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" type="text/css" href="position.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#shitPost").keyup(function(){
+                var currentText = $(this).val();
+                upperText = currentText.toUpperCase();
+                $(".output").text(upperText);
+            });
+        });
+        </script>
+
+</head><body>
+    <div class="container">
+            <img src="truth-bus.png" alt="all aboard the truth bus!" style="width:100%;">
+            <div class="output" position="absolute"></div>
+        </div>
+        <form>
+        <center>
+            <textarea id="shitPost" rows="1" cols="50" placeholder="INPUT YOUR DESIRED TRUTH HERE"></textarea>
+        </center>
+        </form>
+        
+</body></html>
